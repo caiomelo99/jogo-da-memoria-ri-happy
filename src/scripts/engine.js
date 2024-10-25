@@ -50,6 +50,8 @@ function checkMatch(){
     openCards = []
 
     if(document.querySelectorAll('.boxMatch').length === emojis.length){
-        alert('você venceu!')
+        let titulo = document.querySelector('.titulo')
+        titulo.innerHTML = 'VOCÊ VENCEU!'
+        titulo.style.borderBottom = '5px solid #FFF'
     }
 }
